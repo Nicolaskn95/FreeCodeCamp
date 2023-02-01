@@ -7,7 +7,7 @@ So Git is trying to tell you to update the local repo with the current changes i
 We'll be discussing two possible ways of fixing this error in the sections that follow.
 
 How to Fix the error: failed to push some refs to Error in Git
-We can fix the error: failed to push some refs to [remote repo] error in Git using the  git pull origin [branch] or git pull --rebase origin [branch] commands. In most cases, the latter fixes the error.
+We can fix the error: failed to push some refs to [remote repo] error in Git using the  git pull origin [branch] or git pull --rebase origin [^branch] commands. In most cases, the latter fixes the error.
 
 Let's go over how you can use the commands above.
 
@@ -20,12 +20,12 @@ In our case, we're trying to get rid of the error: failed to push some refs to [
 
 Here's how you can do that:
 
-git pull origin main
+## git pull origin main
 If you're working with a different branch, then you'd have to replace main in the example above with the name of your branch.
 
 Just keep in mind that there are chances of failure when using this command to sync your remote and local repos to get rid of the error. If the request succeeds, then go on and run the command below to push your own changes:
 
-git push -u origin main
+# git push -u origin main
 If the error persists, you'll get an error that says: fatal: refusing to merge unrelated histories. In that case, use the solution in the next section.
 
 How to Fix error: failed to push some refs to Error in Git Using git pull --rebase
@@ -33,7 +33,7 @@ The git pull --rebase  command is helpful in situations where your local branch 
 
 To fix the error, go on and run following commands:
 
-git pull --rebase origin main
+# git pull --rebase origin main
 
 git push -u origin main 
 If the first command above runs successfully, you should get a response that says: Successfully rebased and updated refs/heads/main.
