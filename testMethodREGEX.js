@@ -113,9 +113,46 @@
 // let result = sample.match(countWhiteSpace);
 
     // o sinal de "{}" vc esoclhe  numeros de vezes que se repete numeros de 3 entre e 6 e irá retornar um valor
-let ohStr = "Ohhh no";
-let ohRegex = /oh{3,6}\sno/i; // Change this line
-let result = ohRegex.test(ohStr);
-console.log(result)
+// let ohStr = "Ohhh no";
+// let ohRegex = /oh{3,6}\sno/i; // Change this line
+// let result = ohRegex.test(ohStr);
+// console.log(result)
+
+    // O "{6,}" seis para mais
+    // O "{6}"  para numero exato
+// let haStr = "Hazzzzah";
+// let haRegex = /Haz{4,}ah/; // Change this line
+// let result = haRegex.test(haStr);
+// console.log(result)
+
+    // para dizer se a palavra ´é opcional ou nao colocamos "?" apos a palavra
+// let favWord = "favorite";
+// let favRegex = /favou?rite/; // Change this line
+// let result = favRegex.test(favWord);
+
+
+// Use lookaheads in the pwRegex to match passwords that are greater 
+// than 5 characters long, and have two consecutive digits.
+// let sampleWord = "astronaut";
+// let pwRegex = /(?=\w{6,})(?=\w*\d{2})/; // Change this line
+// let result = pwRegex.test(sampleWord);
+
+// let myString = "Franklin D. Roosevelt";
+// let myRegex = /(Franklin|Eleanor) (([A-Z]\.?|[A-Z][a-z]+) )?Roosevelt/; // Change this line
+// let result = myRegex.test(myString); // Change this line
+
+
+// let str = "one two three";
+// let fixRegex = /(\w+)\s(\w+)\s(\w+)/; // Change this line
+// let replaceText = "$3 $2 $1"; // Change this line
+// let result = str.replace(fixRegex, replaceText);
+
+
+    //remover espaçços em branco
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; // Change this line
+let result = hello.replace(wsRegex, ""); // Change this line
+
+
 
 console.log(result)
