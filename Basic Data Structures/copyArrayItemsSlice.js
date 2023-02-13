@@ -1,0 +1,10 @@
+function forecast(arr) {
+    // Only change code below this line
+  // let newArray = arr.slice(2,2);
+    return arr.slice(2,4); // primeiro é o start até onde ele irá parar
+  }
+  // Only change code above this line
+  console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+  
+  
+  

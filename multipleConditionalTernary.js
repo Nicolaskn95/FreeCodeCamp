@@ -3,4 +3,4 @@ function checkSign(num) {
       : (num > 0) ? "positive" 
       : "negative";
   }
-  console.log(checkSign());
+  console.log(checkSign(2));
