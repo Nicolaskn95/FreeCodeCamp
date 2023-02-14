@@ -1,4 +1,4 @@
-function copyMachine(arr, num) {
+function copyMachine(arr, num) { // num repete o numero de vezes
     let newArr = [];
     while (num >= 1) {
         newArr[num - 1] = [...arr]; // "..." spread operator, copia mostra todos os itens da array sem precisar copiar todos 
