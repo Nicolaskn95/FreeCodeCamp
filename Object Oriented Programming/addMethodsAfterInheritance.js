@@ -8,10 +8,21 @@ function Dog() { }
 
 Dog.prototype = Object.create(Animal.prototype);
 Dog.prototype.constructor = Dog;
+
 Dog.prototype.bark = function() {
   console.log("Woof!")
+  };
+Dog.prototype.bark1 = function() {
+  console.log("Howffff!")
   };
 
 // Only change code above this line
 
 let beagle = new Dog();
+let cockerSpaniel = new Dog();
+
+beagle.bark();
+cockerSpaniel.bark1();
+cockerSpaniel.eat();
+beagle.eat();
+
