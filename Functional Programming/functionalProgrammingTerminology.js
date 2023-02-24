@@ -28,3 +28,7 @@ console.log(
   tea4GreenTeamFCC,
   tea4BlackTeamFCC
 );
+
+array.forEach(element => {
+  
+});
