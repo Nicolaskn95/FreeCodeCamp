@@ -2,7 +2,7 @@ function splitify(str) {
     // Only change code below this line
   
     return str.split(/[" "-,-.]+/);
-
+    // /\W/ Matches any non-word character. 
     // The forward slashes / / mark the beginning and end of the regular expression.
     // The square brackets [] are called a character class and match either one of the provided characters.
     // The plus + matches the preceding item one or more times.
